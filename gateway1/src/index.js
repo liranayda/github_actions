@@ -26,7 +26,7 @@ async function main() {
     const app = express();
 
     app.get("/", (req, res) => {
-        res.send('Hello computer1!\n');
+        res.send('Hello computer11!\n');
     });
 
     app.get("/api/data", async (req, res) => {
