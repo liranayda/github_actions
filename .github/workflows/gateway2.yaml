@@ -15,7 +15,6 @@ on:
   workflow_dispatch:
 
 jobs:
-
   publish:
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -38,10 +37,10 @@ jobs:
 #        run: ./scripts/build-image.sh gateway
 
 
-  - name: Build Docker Container
-      shell: bash
-      run: |
-        DOCKER_BUILDKIT=1 docker build -t gateway2 ./gateway
+      - name: Build Docker Container
+        shell: bash
+        run: |
+          DOCKER_BUILDKIT=1 docker build -t gateway2 ./gateway2
 
       #
       # Publishes the Docker image to the container registry.

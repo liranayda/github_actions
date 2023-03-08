@@ -40,7 +40,7 @@ jobs:
       - name: Build Docker Container
         shell: bash
         run: |
-          DOCKER_BUILDKIT=1 docker build -t gateway1 ./gateway
+          DOCKER_BUILDKIT=1 docker build -t gateway1 ./gateway1
 
 
 
