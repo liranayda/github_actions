@@ -4,7 +4,7 @@
 # Automatically deploys the "gateway" microservice on push.
 #
 
-name: Deploy Gateway
+name: Deploy Gateway2
 
 on:
   push:
