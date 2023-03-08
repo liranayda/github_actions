@@ -11,7 +11,7 @@ on:
     branches: 
       - main
     paths:
-      - 'gateway/**'
+      - 'gateway2/**'
   workflow_dispatch:
 
 jobs:
@@ -37,12 +37,11 @@ jobs:
 #      - name: Build
 #        run: ./scripts/build-image.sh gateway
 
-      - name: Build Docker Container
-        shell: bash
-        run: |
-          DOCKER_BUILDKIT=1 docker build -t gateway1 ./gateway
 
-
+  - name: Build Docker Container
+      shell: bash
+      run: |
+        DOCKER_BUILDKIT=1 docker build -t gateway2 ./gateway
 
       #
       # Publishes the Docker image to the container registry.
